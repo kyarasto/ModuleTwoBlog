@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The story of StarMachine</title>
+
+  <style>
+    body {
+      background-color: #858CFF;
+      background-image: radial-gradient(white, rgba(255, 255, 255, .2) 2px, transparent 40px),
+                        radial-gradient(white, rgba(255, 255, 255, .15) 1px, transparent 30px),
+                        radial-gradient(white, rgba(255, 255, 255, .1) 2px, transparent 40px),
+                        radial-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .1) 2px, transparent 30px);
+      background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+      background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+      color: white;
+    }
+
+    body::before,
+    body::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      background: #F8FF9B; /* Color of the stars */
+      box-shadow: 100px 100px white, /* Adjust these values to position stars */
+                  200px 200px white,
+                  300px 300px white,
+                  400px 400px white,
+                  500px 500px white,
+                  600px 600px white,
+                  700px 700px white,
+                  800px 800px white,
+                  900px 900px white,
+                  1000px 1000px white;
+      animation: twinkle 5s infinite; /* Add animation for twinkling effect */
+    }
+
+    @keyframes twinkle {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.5;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    #name {
+      font-size: 36px;
+      font-weight: bold;
+      color: white;
+      margin-top: 50px;
+    }
+
+    #blog {
+      text-align: left;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px;
+      margin-top: 20px;
+    }
+
+    #blog p {
+      margin-bottom: 20px;
+    }
+
+
+    a {
+      display: block;
+      text-align: left;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px;
+      margin-top: 20px;
+      color: #FBFF81;
+    }
+
+    b {
+      text-align: left;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px;
+      margin-top: 20px;
+
+    }
+
+    hr {
+      border: none;
+      border-top: 2px solid #333;
+      width: 50%;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="name">The story of StarMachine</div>
+
+  <div id="blog">
+    Welcome to the cosmos of StarMachine, where you can traverse the green and blue skies using the stars with a flick of your joystick and the tap of a button. StarMachine is an interactive, generative device designed to allow the user to change the art on their screen :) The main goal of StarMachine is to let each viewer have a distinct experience with the art. In this blog post, I will describe my artistic vision behind StarMachine, the creative decisions driving its design, and the technical challenges I encountered during its creation.
+
+    <br> <br>
+    I chose to follow the star theme from Module One which you can find the repo for at the bottom of this post! One of the most important parts about the creation of StarMachine is the color palette. I chose to use pastel green and blue for the background color options because I wanted them to represent the sky. The yellow star fill and purple outline was important to contrast the sky colors. It took a lot of time to find the right shades but it was worth it! When it came to the enclosure I also chose to add stars since it fit the theme well and painted the box a deep purple since I think it best represents space. I also had a hard time deciding how to angle the points of the stars and deciding what range the star size should be. Through trial and error I was able to find a range and angle I was happy with. 
+
+    <br> <br>
+    I faced a few technical issues that other artists may run into. The first is getting the button to connect in Arduino. You may have to rearrange the four pin button on the breadboard until you get it right, especially because the pins on the button are not numbered. Check out the Module 2 Repo below for more guidance on this. A very difficult part of building the enclosure was cutting the openings for the button and joystick. Make sure to measure and cut these on a rectangular side of the box before hot gluing the box together. Apart from this the only other big difficulty was cutting the cardboard into a good size for the enclosure to fit the whole device. Building the enclosure may be tedious but be patient and you will get there! 
+
+    <br> <br>
+   My vision for StarMachine was to create an interactive art experience. Every creative decision, from the color palette to the interactive elements was curated for the user's experience. I hope you enjoyed learning about my creative process :)
+
+    <br> <br>
+  
+
+
+  </div>
+
+  <hr style="width: 50%;">
+
+  <div id="blog"> Below is a video that shows how StarMachine works!</div>
+
+  <a href="https://youtube.com/shorts/6nX9B5nqd1I" target="_blank">Video Demo</a>
+
+  <br>
+
+  <div id="blog"> If you would like to see more pictures, learn more about my process and installation, or reproduce
+    LoveBot please click the link below! </div>
+  <a href="https://github.com/kyarasto/Module_Two" target="_blank">Module Two Repo :)</a>
+  
+  <a href="https://github.com/kyarasto/Module_One" target="_blank">Module One Repo :)</a>
+  <br>
+  <div id="subheading">Thank you for the support of Mark Santolucito in this project!
+  </div>
+  <br>
+  <div id="subheading">Kyara Torres-Olivares</div>
+
+
+
+
+</body>
+
+</html>
